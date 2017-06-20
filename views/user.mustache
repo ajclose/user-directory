@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{name}}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    {{#user}}
+    <div class="user-container">
+      <div class="display-info">
+        <img class="profile-picture" src="{{avatar}}" alt="">
+        <div class="personal-info">
+            <h1 class="name">{{name}}</h1>
+
+          <div class="contact">
+            <div class="row">
+            <div class="address">{{address.city}}, {{address.country}}</div>
+            {{#job}}
+            <div class="position">{{job}}, {{company}}</div>
+            {{/job}}
+            {{^job}}
+            <div class="no-position">Available for hire</div>
+            {{/job}}
+          </div>
+          <div class="row">
+            <div class="email">{{email}}</div>
+            <div class="phone">{{phone}}</div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+      <table class="skills-education">
+        <tr>
+          <td>Education</td>
+          <td>{{university}}</td>
+        </tr>
+        <tr>
+          <td>Skills</td>
+          <td>{{skills}}</td>
+        </tr>
+      </table>
+    </div>
+    {{/user}}
+  </body>
+</html>

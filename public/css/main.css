@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+a {
+  flex-basis: 20%;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.person {
+  border: 1px solid gray;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 25px;
+  color: blue;
+  padding: 10px;
+}
+
+.position {
+  padding: 10px;
+  color: gray;
+}
+
+.no-position {
+  color: red;
+  padding: 10px;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.display-info {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-picture {
+  border: 1px solid gray;
+  border-radius: 100%;
+  margin: 0 20px;
+}
+
+.personal-info .name {
+  color: black;
+  padding-left: 0;
+  font-size: 50px;
+}
+
+.skills-education {
+  align-self: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.contact .position {
+  padding: 0 5px;
+  color: black;
+}
+
+.contact .no-position {
+  padding: 0 5px;
+}
+
+.address {
+  border-right: 1px solid black;
+  padding: 0 5px;
+}
+
+.email {
+  color: black;
+  padding: 0 5px;
+  border-right: 1px solid black;
+}
+
+.phone {
+  color: black;
+  padding: 0 5px;
+}

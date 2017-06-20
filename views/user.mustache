@@ -15,7 +15,12 @@
 
           <div class="contact">
             <div class="row">
+              {{#address.city}}
             <div class="address">{{address.city}}, {{address.country}}</div>
+            {{/address.city}}
+            {{^address.city}}
+            <div class="address">{{address.country}}</div>
+            {{/address.city}}
             {{#job}}
             <div class="position">{{job}}, {{company}}</div>
             {{/job}}
@@ -32,10 +37,12 @@
         </div>
       </div>
       <table class="skills-education">
+        {{#education}}
         <tr>
           <td>Education</td>
           <td>{{university}}</td>
         </tr>
+        {{/education}}
         <tr>
           <td>Skills</td>
           <td>{{skills}}</td>

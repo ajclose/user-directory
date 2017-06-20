@@ -44,9 +44,17 @@
         </tr>
         {{/education}}
         <tr>
+
           <td>Skills</td>
-          <td>{{skills}}</td>
+          <td>
+            <ul>
+              {{#skills}}
+              <li>{{skills}}</li>
+              {{/skills}}
+            </ul>
+          </td>
         </tr>
+
       </table>
     </div>
     {{/user}}
